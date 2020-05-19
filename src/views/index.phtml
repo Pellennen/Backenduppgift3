@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><?=$title?></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<template id="loginFormTemplate">
+  <h2>Login</h2>
+  <form id="loginForm" action="login" method="POST">
+    <label for="username">username</label>
+    <input type="text" name="username" id="username"> <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"> <br>
+    <button type="submit">Log in</button>
+  </form>
+  <div id="messageLogin"></div>
+</template>
+
+<template id="registerFormTemplate">
+  <h2>Register user</h2>
+  
+  <form id="registerForm">
+    <label for="username">User</label>
+    <input type="text" name="username"> <br>
+    <label for="password">Password</label>
+    <input type="password" name="password"> <br>
+    <button type="submit">Register</button>
+  </form>
+  <div id="messageRegister"></div>
+</template>
+
+<template id="entriesTemplate">
+  <h2>Latests posts</h2>
+  <div id="entries"></div>
+</template>
+
+<template id="allEntriesTemplate">
+  <h2>Your earlier posts</h2>
+  
+</template>
+
+<template id="createNewEntryTemplate">
+  <h2>Your earlier posts</h2>
+  
+</template>
+
+<template id="createNewEntryTemplate">
+  <h2>Write a new post</h2>
+  
+</template>
+
+
+<div class="container">
+  <header>
+    <h1> <?= $title ?> </h1>
+  </header>
+</div>
+
+  <main>
+    
+    
+  </main>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
